@@ -1,0 +1,20 @@
+.four-content{
+  width:100%;
+  height: calc(100vh - 4rem - 160px);
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.four-center h1{
+  font-size: clamp(100px, 120px, 10vw);
+  font-weight: 400;
+  color: var(--primary-text-color);
+  font-family: Fraunces, serif;
+}
+
+.four-center h2{
+  font-size: clamp(30px, 40px, 8vw);
+  font-weight: 400;
+  color: var(--primary-text-color);
+}

@@ -1,0 +1,88 @@
+/* ---footer--- */
+
+.footer-grid{
+  width: 100%;
+  padding-bottom: 3rem;
+  margin:2.5rem auto 0 auto;
+  height:fit-content;
+  display:grid;
+  /* padding:0; */
+  grid-template-columns: 3fr 1fr 1fr;
+  font-size: clamp(16px, 18px, 4vw);
+  grid-gap: 30px;
+  grid-template-areas: 
+      '👋 🕸️ 📒';
+}
+
+.footer-title{
+  grid-area: 👋;
+}
+
+.footer-site{
+  grid-area: 🕸️;
+}
+
+.footer-contact{
+  grid-area: 📞;
+}
+
+.footer-social{
+  grid-area: 📒;
+}
+
+.footer-nerd{
+  grid-area: 🧠;
+  width:100%;
+}
+
+.footer-title a{
+  text-decoration:none;
+  display:block;
+}
+
+.footer-title h2{
+  font-weight: 400;
+  font-family: Fraunces, serif;
+  /* font-size: clamp(25px, 35px, 5vw); */
+  font-size: clamp(32px, 45px, 8vw);
+  margin-bottom:1rem;
+}
+
+.footer-title p{
+  font-weight: 400;
+  font-size: clamp(18px, 20px, 4vw);
+  line-height:105%;
+  margin-bottom:0.5rem;
+  color: var(--secondary-text-color);
+}
+
+.footer-area ul{
+  list-style-type:none;
+}
+
+.footer-area ul > li{
+  padding: 0.4rem 0;
+  font-size: clamp(18px, 20px, 4vw);
+}
+
+.footer-area ul > li > a{
+  color: var(--secondary-text-color);
+  text-decoration: none;
+  transition: color .4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.footer-area ul > li > a:hover {
+  color: var(--accent-color);
+}
+
+@media only screen and (max-width: 800px) {
+  .footer-grid{
+      grid-template-columns: 1fr 1fr;
+      font-size: clamp(18px, 20px, 4vw);
+      grid-gap: 25px;
+      grid-template-areas: 
+      '👋 👋'
+      '🕸️ 📒';
+      padding-bottom: 2rem;
+  }
+}

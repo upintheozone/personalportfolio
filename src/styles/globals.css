@@ -1,0 +1,129 @@
+:root {
+  /* --bg-color: #F4F5F8; */
+  --bg-color: #FFFFFF;
+  --bg-color-low-opacity: #ffffffa9;
+  --primary-text-color: #000000;
+  --secondary-text-color: #868686;
+  --tertiary-color: #D2D3D6;
+  --accent-color: #4453db;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+      --bg-color: #151617;
+      --bg-color-low-opacity: #151617a9;
+      --primary-text-color: #F4F5F8;
+      --secondary-text-color: #c5c5c7;
+      --tertiary-color: #757678;
+      --accent-color: #606dde;
+  }
+
+  img {
+      opacity: 0.9;
+      transition: opacity .4s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  img:hover {
+      opacity: 1;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../../public/assets/fonts/Inter-Regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../../public/assets/fonts/Inter-Medium.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Fraunces';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../../public/assets/fonts/Fraunces_72pt-Regular.ttf');
+}
+
+html{
+  margin: 0;
+  width:100vw;
+  background-color: var(--bg-color);
+}
+
+html,body{
+  font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif, apple color emoji, segoe ui emoji, segoe ui symbol, noto color emoji;
+  color: var(--primary-text-color);
+}
+
+body{
+  max-width:800px;
+  width:100%;
+  margin: 1rem auto;
+}
+
+.preload-transitions * {  
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -ms-transition: none !important;
+  -o-transition: none !important;
+  transition: none !important;
+}
+
+a {
+  transition: color .4s cubic-bezier(0.16, 1, 0.3, 1);
+  color: var(--primary-text-color);
+  text-decoration: underline;
+}
+
+a:hover {
+  color: var(--accent-color);
+}
+
+hr{
+  width:100%;
+  text-align:left;
+  margin:0 auto;
+  height:1px;
+  color: var(--tertiary-color);
+  background-color: var(--tertiary-color);
+  border: 0;
+}
+
+.blank-filler{
+  height: 2rem;
+  width:100%;
+  display:block;
+}
+
+/* ---content--- */
+
+.content{
+  display:block;
+  width: 95%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+@media only screen and (max-width: 600px) {
+  .content{
+      width: 90%;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+}
