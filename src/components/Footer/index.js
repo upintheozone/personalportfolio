@@ -31,7 +31,7 @@ const Footer = () => {
       <hr />
       <div className={styles['footer-grid']}>
         <div className={styles['footer-title']}>
-          <a href="mailto:jiaronghu8@gmail.com"><h2>Jia Rong Hu</h2></a>
+          <h2>Jia Rong Hu</h2>
           <p>Portfolio + Digital Garden.</p>
           <p>© 2023</p>
         </div>

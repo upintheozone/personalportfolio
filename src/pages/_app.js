@@ -12,7 +12,7 @@ export default function App({ Component, pageProps }) {
     <>
       <NavigationBar />
       <main className={'content'}>
-        <AnimatePresence mode="wait"  >
+        <AnimatePresence>
         {/* initial={false} */}
           <Component {...pageProps} key={router.pathname} />
         </AnimatePresence>

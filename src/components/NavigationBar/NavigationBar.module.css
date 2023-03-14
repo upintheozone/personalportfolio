@@ -43,9 +43,16 @@
 
 .nav-link{
     color:var(--secondary-text-color);
+    transition: all .4s cubic-bezier(0.16, 1, 0.3, 1);
     text-decoration:none;
-    margin: 0 1.2rem 0 1.2rem;
-    padding: 4px 0 4px 0;
+    margin: -2px 0.8rem -2px 0.8rem;
+    padding: 6px 12px 6px 12px;
+    border-radius: 8px;
+}
+
+.nav-link:hover {
+    background-color: var(--quaternary-color);
+    color:var(--primary-text-color);
 }
 
 .active{
@@ -70,6 +77,10 @@
     font-weight:400;
     color:var(--primary-text-color);
     text-decoration:none;
+    transition: all .4s cubic-bezier(0.16, 1, 0.3, 1);
+    margin: -2px 0 -2px 0;
+    padding: 6px 8px 6px 8px;
+    border-radius: 8px;
 }
 
 .nav-mail-text-mobile, .nav-mail-text-desktop{
@@ -90,7 +101,11 @@
 
 .nav-contact:hover > .nav-mail-arrow {
     transform:translate(+10%, -10%);
-    color: var(--accent-color);
+}
+
+.nav-contact:hover {
+    background-color: var(--quaternary-color);
+    color:var(--primary-text-color);
 }
 
 @media only screen and (max-width: 600px) {
