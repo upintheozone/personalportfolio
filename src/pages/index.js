@@ -67,7 +67,7 @@ export default function Home() {
     <>
       <Head>
         <title>Jia Rong Hu / HS Student</title>
-        <meta name="description" content="Jia Rong Hu is a HS Student currently studying as a sophomore at BCIS" />
+        <meta name="description" content="Jia Rong Hu is a high school student interested in CS and design." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
       <motion.main animate={"show"} variants={container}>
