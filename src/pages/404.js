@@ -12,11 +12,10 @@ export default function FourOhFour() {
       <main>
         <div className={styles['four-content']}>
           <div className={styles['four-center']}>
-            <h1>404 :(</h1>
-              <h2>
-                Looks like there's nothing here...<br />
-                Click <Link href="/">here</Link> to go back home.
-              </h2>
+            <h1>404 🐟</h1>
+            <h2>
+              Oh no! Where's this? <br /> Jish the adventurer wants to take us back <Link href="/">home</Link>.
+            </h2>
           </div>
         </div>
       </main>

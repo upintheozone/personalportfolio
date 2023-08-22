@@ -1,6 +1,7 @@
 .four-content{
   width:100%;
   height: calc(100vh - 4rem - 160px);
+  padding-bottom: 4rem;
   display:flex;
   align-items: center;
   justify-content: center;
@@ -14,7 +15,11 @@
 }
 
 .four-center h2{
-  font-size: clamp(30px, 40px, 8vw);
+  font-size: clamp(15px, 25px, 4vw);
   font-weight: 400;
   color: var(--primary-text-color);
+}
+
+.four-center{
+  margin-bottom: 7.5rem;
 }

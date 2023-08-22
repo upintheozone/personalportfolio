@@ -32,22 +32,16 @@ const Footer = () => {
       <div className={styles['footer-grid']}>
         <div className={styles['footer-title']}>
           <h2>Jia Rong Hu</h2>
-          <p>Portfolio + Digital Garden.</p>
+          <p>He/Him | BCIS Class of 2025</p>
           <p>© 2023</p>
         </div>
-        <div className={styles['footer-area'] + " " + styles['footer-site']}>
-          <ul>
-            <li><Link href="/">Work</Link></li>
-            <li><Link href="/play">Play</Link></li>
-            <li><Link href="/about">About</Link></li>
-          </ul>
-        </div>
+
         <div className={styles['footer-area'] + " " + styles['footer-social']}>
           <ul>
-            <li><a href="mailto:jiaronghu8@gmail.com">Email</a></li>
-            <li><a href="https://layers.to/jia" target="_blank" rel="noreferrer">Layers.to</a></li>
-            <li><a href="https://read.cv/jia" target="_blank" rel="noreferrer">Read.cv</a></li>
-            <li><a href="https://bento.me/jia" target="_blank" rel="noreferrer">Bento</a></li>
+            <li><a href="mailto:jia@jrhu.me">Say Hi → jia@jrhu.me</a></li>
+            <li><a href="https://x.com/upintheozone" target="_blank" rel="noreferrer">What's Happening? → X</a></li>
+            <li><a href="https://read.cv/jia" target="_blank" rel="noreferrer">Some Projects → Read.cv</a></li>
+            <li><a href="https://bento.me/jia" target="_blank" rel="noreferrer">Link in Bio → Bento</a></li>
           </ul>
         </div>
       </div>

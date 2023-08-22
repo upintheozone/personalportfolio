@@ -1,12 +1,11 @@
 :root {
-  /* --bg-color: #F4F5F8; */
   --bg-color: #FFFFFF;
   --bg-color-low-opacity: #ffffffa9;
   --primary-text-color: #000000;
   --secondary-text-color: #868686;
   --tertiary-color: #D2D3D6;
   --quaternary-color: #efefef;
-  --accent-color: #4453db;
+  --accent-color: #4672CF;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -17,7 +16,7 @@
       --secondary-text-color: #c5c5c7;
       --tertiary-color: #757678;
       --quaternary-color: #3b3c3c;
-      --accent-color: #606dde;
+      --accent-color: #7EA4DA;
   }
 
   img {

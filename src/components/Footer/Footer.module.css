@@ -7,32 +7,24 @@
   height:fit-content;
   display:grid;
   /* padding:0; */
-  grid-template-columns: 3fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   font-size: clamp(16px, 18px, 4vw);
   grid-gap: 30px;
   grid-template-areas: 
-      '👋 🕸️ 📒';
+      '👋 📒';
 }
 
 .footer-title{
   grid-area: 👋;
 }
 
-.footer-site{
-  grid-area: 🕸️;
-}
-
-.footer-contact{
-  grid-area: 📞;
+.footer-title p {
+  padding-bottom:10px;
 }
 
 .footer-social{
   grid-area: 📒;
-}
-
-.footer-nerd{
-  grid-area: 🧠;
-  width:100%;
+  margin-top: 5px;
 }
 
 .footer-title a{
@@ -77,12 +69,11 @@
 
 @media only screen and (max-width: 800px) {
   .footer-grid{
-      grid-template-columns: 1fr 1fr;
       font-size: clamp(18px, 20px, 4vw);
       grid-gap: 25px;
       grid-template-areas: 
-      '👋 👋'
-      '🕸️ 📒';
+      '👋'
+      '📒';
       padding-bottom: 2rem;
   }
 }

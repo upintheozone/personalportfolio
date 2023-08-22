@@ -17,7 +17,7 @@ export default function Home() {
   
   const headingText = {
     hidden: {
-        y: -15, //move out of the site
+        y: -10, //move out of the site
         opacity: 0,
     },
     show: {
@@ -41,7 +41,7 @@ export default function Home() {
         opacity: 1,
         transition: {
           delay:0.5,
-          duration: 0.8,
+          duration: 1.1,
           ease: "easeOut",
       },
     },
@@ -77,7 +77,7 @@ export default function Home() {
             <motion.div initial={"hidden"} animate={"show"} variants={bodyText}>
               <p>A high school student interested in <span className={styles['hero-emphasis']}>💻 CS</span> and <span className={styles['hero-emphasis']}>✨ design</span>. </p>
               <p>I've worked on a variety of aspiring and innovative <span className={styles['hero-emphasis']}>💡 projects</span> with my peers within and outside the school environment. I focus on projects that I strongly believe will <span className={styles['hero-emphasis']}>⚙️ change the world</span> and inspire a <span className={styles['hero-emphasis']}>🔆 bright future</span> ahead. </p>
-              <p>I am constantly motivated to take on <span className={styles['hero-emphasis']}>🚪 new opportunities</span> and to learn and <span className={styles['hero-emphasis']}>🌱 grow</span> from unique experiences. <Link href="/about"><span className={styles['about-link-text']}>Read More</span> <span className={styles['about-link-arrow']}>→</span></Link></p>
+              <p>I am constantly motivated to take on <span className={styles['hero-emphasis']}>🚪 new opportunities</span> and to learn and <span className={styles['hero-emphasis']}>🌱 grow</span> from unique experiences. <Link href="https://read.cv/jia"><span className={styles['about-link-text']}>Read More</span> <span className={styles['about-link-arrow']}>→</span></Link></p>
             </motion.div>
           </div>
         </div>
@@ -90,74 +90,33 @@ export default function Home() {
           <div className={styles['project-content']} id="project-content">
             <div className={styles['project-grid']}>
               <div className={styles['project-overview'] + " " + styles['project-large']} id="project-solar-panel">
-                <Link target="_blank" href="https://www.bcis.cn/about/news/nnews/data_260.html">
                   <div className={styles['project-overview-image']}><img alt="Solar Panel Project" src="assets/images/cover-solar-panel.webp" /></div>
                   <div className={styles['project-overview-grid']}>
                     <h3 className={styles['project-title']}>BCIS Solar Panel Project</h3>
                     <p className={styles['project-description']}>Proposal for sustainable energy in school greenhouse.</p>
                   </div>
-                </Link>
               </div>
 
               <div className={styles['project-overview']} id="project-stem-kit">
-                <Link href="/work/stem-kit">
                   <div className={styles['project-overview-image']}><img alt="STEM Kit Project" src="assets/images/cover-stem-kit.webp" /></div>
                   <div className={styles['project-overview-grid']}>
                       <h3 className={styles['project-title']}>Hydroponics STEM Kit</h3>
                       <p className={styles['project-description']}>DIY STEM Kit for a young audience on Hydroponics.</p>
                   </div>
-                </Link>
               </div>
 
               <div className={styles['project-overview']} id="project-hydroponics">
-                <Link target="_blank" href="https://www.bcis.cn/about/news/nnews/data_30.html">
                   <div className={styles['project-overview-image']}><img alt="Hydroponics Project" src="assets/images/cover-hydroponics.webp" /></div>
                   <div className={styles['project-overview-grid']}>
                     <h3 className={styles['project-title']}>Hydroponics System</h3>
                     <p className={styles['project-description']}>Self designed multi layered efficient farming system.</p>
                   </div>
-                </Link>
               </div>
             </div>
           </div>
         </motion.div>
 
         <div className={'blank-filler'}></div>
-
-        <div className={styles['section-intro']}>
-            <h3 className={styles['section-intro-title']}>Play</h3>
-            <span className={styles['section-intro-filler']}></span>
-            <h3 className={styles['section-intro-title']}>↓</h3>
-        </div>
-
-        <div className={styles['project-content']} id="project-content">
-          <div className={styles['project-grid']}>
-
-            <div className={styles['project-overview']} id="play-1">
-              <Link href="/play/1">
-                <div className={styles['project-overview-image']}>
-                  <img alt="play1" src="assets/images/placeholder-2.jpeg" />
-                </div>
-                <div className={styles['project-overview-grid']}>
-                    <h3 className={styles['project-title']}>Combat Robotics</h3>
-                    <p className={styles['project-description']}>Meticulously crafted miniature death machines.</p>
-                </div>
-              </Link>
-            </div>
-
-            <div className={styles['project-overview']} id="play-2">
-              <Link href="/play/2">
-                <div className={styles['project-overview-image']}>
-                  <img alt="play2" src="assets/images/placeholder-2.jpeg" />
-                </div>
-                <div className={styles['project-overview-grid']}>
-                  <h3 className={styles['project-title']}>Random Gadgets</h3>
-                  <p className={styles['project-description']}>Improving the small, annoying aspects of life.</p>
-                </div>
-              </Link>
-            </div>
-          </div>
-        </div>
 
       </motion.main> 
     </>
