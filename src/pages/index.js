@@ -65,10 +65,28 @@ export default function Home() {
 
   return (
     <>
-      <Head>
+      <Head> 
         <title>Jia Rong Hu / HS Student</title>
-        <meta name="description" content="Jia Rong Hu is a high school student interested in CS and design." />
+        <meta name="title" content="Jia Rong Hu / HS Student" />
+        <meta name="description" content="A high school student interested in CS and design." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="keywords" content="Jia, Jiarong, Jiarong Hu, Jia Rong, Jia Rong Hu, Designer, High school student" />
+        <meta name="robots" content="index, follow" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="language" content="English" />
+
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://jrhu.me/" />
+        <meta property="og:title" content="Jia Rong Hu / HS Student" />
+        <meta property="og:description" content="A high school student interested in CS and design." />
+        <meta property="og:image" content="/assets/images/meta-image.png" />
+
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:url" content="https://jrhu.me/" />
+        <meta property="twitter:title" content="Jia Rong Hu / HS Student" />
+        <meta property="twitter:description" content="A high school student interested in CS and design." />
+        <meta property="twitter:image" content="/assets/images/meta-image.png" />
+
       </Head>
       <motion.main animate={"show"} variants={container}>
         <div className={styles['hero-content']} id="hero-content">
