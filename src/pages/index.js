@@ -79,13 +79,13 @@ export default function Home() {
         <meta property="og:url" content="https://jrhu.me/" />
         <meta property="og:title" content="Jia Rong Hu / HS Student" />
         <meta property="og:description" content="A high school student interested in CS and design." />
-        <meta property="og:image" content="/assets/images/meta-image.png" />
+        <meta property="og:image" content="https://jrhu.me/assets/images/meta-image.png" />
 
         <meta property="twitter:card" content="summary_large_image" />
         <meta property="twitter:url" content="https://jrhu.me/" />
         <meta property="twitter:title" content="Jia Rong Hu / HS Student" />
         <meta property="twitter:description" content="A high school student interested in CS and design." />
-        <meta property="twitter:image" content="/assets/images/meta-image.png" />
+        <meta property="twitter:image" content="https://jrhu.me/assets/images/meta-image.png" />
 
       </Head>
       <motion.main animate={"show"} variants={container}>
